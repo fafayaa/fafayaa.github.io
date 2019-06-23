@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fafayaa.github.io</id>
-    <title>法筏</title>
-    <updated>2019-06-22T17:55:03.586Z</updated>
+    <title>Blog</title>
+    <updated>2019-06-23T03:12:19.291Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fafayaa.github.io"/>
     <link rel="self" href="https://fafayaa.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://fafayaa.github.io/images/avatar.png</logo>
     <icon>https://fafayaa.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, 法筏</rights>
+    <rights>All rights reserved 2019, Blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello word！]]></title>
         <id>https://fafayaa.github.io/post/hello-word</id>
