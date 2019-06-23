@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fafayaa.github.io</id>
     <title>Blog</title>
-    <updated>2019-06-23T03:12:19.291Z</updated>
+    <updated>2019-06-23T03:36:52.060Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fafayaa.github.io"/>
     <link rel="self" href="https://fafayaa.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://fafayaa.github.io/images/avatar.png</logo>
     <icon>https://fafayaa.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[利用宝塔面板安装Sprov-ui v2ray]]></title>
+        <id>https://fafayaa.github.io/post/li-yong-bao-ta-mian-ban-an-zhuang-sprov-ui-v2ray</id>
+        <link href="https://fafayaa.github.io/post/li-yong-bao-ta-mian-ban-an-zhuang-sprov-ui-v2ray">
+        </link>
+        <updated>2019-06-23T03:29:16.000Z</updated>
+        <content type="html"><![CDATA[<p>系统使用Debian即可
+在你的Linux服务器上依次运行以下命令：</p>
+<pre><code>apt-get install git
+
+git clone https://github.com/fafayaa/sprov-ui
+
+cd sprov-ui
+
+bash install.sh
+
+bash /root/sprov-ui/sprov-ui.sh &amp;&amp; chmod +x /usr/bin/sprov-ui
+</code></pre>
+<p>然后安装宝塔面板</p>
+<pre><code>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh
+</code></pre>
+<p><a href="https://www.bt.cn/bbs/thread-19376-1-1.html">其他系统请射入</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello word！]]></title>
         <id>https://fafayaa.github.io/post/hello-word</id>
