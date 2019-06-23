@@ -149,13 +149,14 @@
               <span class="fh5co-meta animate-box">
                   
               </span>
-              <h2 class="fh5co-article-title animate-box">利用宝塔面板安装Sprov-ui v2ray</h2>
+              <h2 class="fh5co-article-title animate-box">简单便宜 安装Sprov-ui v2ray 并套上https</h2>
               <span class="fh5co-meta fh5co-date animate-box">2019-06-23</span>
 
               <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                   <div class="row">
                       <div class="col-md-12 animate-box post-content">
-                          <p> <p>系统使用Debian即可
+                          <p> <p>首先我们需要选购一个vps 这里推荐老毛子的11软妹币/月的小型vps
+系统使用Debian即可 我这里安装的是纯净的Debian9
 在你的Linux服务器上依次运行以下命令：</p>
 <pre><code>apt-get install git
 
@@ -167,6 +168,8 @@ bash install.sh
 
 bash /root/sprov-ui/sprov-ui.sh &amp;&amp; chmod +x /usr/bin/sprov-ui
 </code></pre>
+<p>至此访问服务器ip+设置的端口就可以进入Sprov面板啦</p>
+<p>现在开始使用https</p>
 <p>然后安装宝塔面板</p>
 <pre><code>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh
 </code></pre>
