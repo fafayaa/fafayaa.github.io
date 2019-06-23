@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
+  <head>
+      
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Fafa&#39;s Blog</title>
@@ -24,14 +24,20 @@
 
 <!-- Comment -->
 
+    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+    
+
+    
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 <link crossorigin="anonymous" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" href="https://lib.baomitu.com/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
 
-    </head>
-    <body>
-    
+  </head>
+  <body>
+  
 <div id="fh5co-offcanvas">
     <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
         <span><i class="icon-cross3"></i> <span>Close</span></span>
@@ -133,27 +139,100 @@
 </header>
 
 
-    <div class="container-fluid" style="height: 620px;">
-        <div class="row fh5co-post-entry">
+<!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+<!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
 
-            
-                <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
-                    <h2 class="fh5co-article-title">
-                        <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
-                        <a href="https://fafayaa.github.io/tag/v2ray">v2ray</a>
-                    </h2>
-                </article>
-            
-            <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+  <div class="container-fluid">
+      <div class="row fh5co-post-entry single-entry">
+          <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+              <figure class="animate-box">
+                  
+              </figure>
+              <span class="fh5co-meta animate-box">
+                  
+                      <div class="tag-container">
+                          
+                              <a href="https://fafayaa.github.io/tag/v2ray" class="tag">v2ray, </a>
+                          
+                      </div>
+                  
+              </span>
+              <h2 class="fh5co-article-title animate-box">记一次安装v2ray带Sprov-ui面板</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-06-23</span>
 
-        </div>
+              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                  <div class="row">
+                      <div class="col-md-12 animate-box post-content">
+                          <p> <p>首先我们需要选购一个vps 这里推荐老毛子justhost的11软妹币/月小型vps
+<a href="https://justhost.ru/services/vps">地址</a> (访问可能较慢）
+配置如下</p>
+<blockquote>
+<ul>
+<li>虚拟化：KVM</li>
+</ul>
+</blockquote>
+<ul>
+<li>核心：1</li>
+<li>RAM：512 Mb</li>
+<li>硬盘：5 Gb</li>
+<li>流量：无限</li>
+</ul>
+<h3 id="这家俄罗斯主机商现已经支持-支付宝">这家俄罗斯主机商现已经支持 支付宝</h3>
+<h3 id="推荐服务器地址选择阿德曼新西伯利亚">推荐服务器地址选择阿德曼（新西伯利亚）</h3>
+<h3 id="系统使用debian即可-我这里安装的是纯净的debian9">系统使用Debian即可 我这里安装的是纯净的Debian9</h3>
+<h2 id="在你的linux服务器上依次运行以下命令">在你的Linux服务器上依次运行以下命令：</h2>
+<pre><code>apt-get install git
 
-        
+git clone https://github.com/fafayaa/sprov-ui
+
+cd sprov-ui
+
+bash install.sh
+
+bash /root/sprov-ui/sprov-ui.sh &amp;&amp; chmod +x /usr/bin/sprov-ui
+</code></pre>
+<p>至此访问服务器ip+设置的端口就可以进入Sprov面板啦</p>
+ </p>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                              <div class="next-post">
+                                  <div class="next">下一篇</div>
+                                  <a href="https://fafayaa.github.io/post/hello-word">
+                                      <h3 class="post-title">
+                                          Hello word！
+                                      </h3>
+                                  </a>
+                              </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                              
+                                  <div id="gitalk-container"></div>
+                              
+
+                              
+                          
+                      </div>
+                  </div>
+              </div>
+
+          </article>
+      </div>
+  </div>
+
+    
 <footer id="fh5co-footer">
   <p></p>
 </footer>
 
-    </div>
 
     
 <!-- jQuery -->
@@ -175,6 +254,29 @@
 
 
 
+    
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
 
-    </body>
+            var gitalk = new Gitalk({
+                clientID: '12bebceec9aba7c505ac',
+                clientSecret: '8afbec8cf5c6ca79cd89695cf86c49b3f9d8751c',
+                repo: 'fafayaa.github.io',
+                owner: 'fafayaa',
+                admin: ['fafayaa'],
+                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            })
+
+            gitalk.render('gitalk-container')
+
+        </script>
+    
+
+    
+
+
+
+
+  </body>
 </html>
