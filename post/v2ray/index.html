@@ -1,108 +1,138 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
 <title>记一次安装v2ray带Sprov-ui面板 | Fafa&#39;s Blog</title>
-<meta name="description" content="基于Gridea">
+<link rel="shortcut icon" href="https://fafayaa.github.io/favicon.ico?v=1569951492831">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fafayaa.github.io/styles/main.css" type='text/css' media='all'>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://fafayaa.github.io/favicon.ico?v=1569855649541">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fafayaa.github.io/styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
 
 
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://fafayaa.github.io">
-        <img class="avatar" src="https://fafayaa.github.io/images/avatar.png?v=1569855649541" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://fafayaa.github.io">
-        <h1 class="site-title">Fafa&#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">记一次安装v2ray带Sprov-ui面板</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-06-23</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
+</head>
+<body class="home blog ct-body standard">
+<div id="overflow-container" class="overflow-container">
+  <a class="skip-content" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header" role="banner">
+    <div class='top-navigation top-navigation-important'>
+        <div class='container'>
+            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
+                <div class="menu">
+                    <ul id="menu-secondary-items" class="menu-secondary-items">
+                        
+                        
+                            
+                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+                            <a href="https://fafayaa.github.io/tag/v2ray">v2ray</a>
+                        </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+            <ul class="social-media-icons">
                 
-                  <a href="https://fafayaa.github.io/tag/v2ray">
-                    v2ray
                     
-                  </a>
                 
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <p>首先我们需要选购一个vps 这里推荐老毛子justhost的11软妹币/月小型vps<br>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="title-info" class="title-info">
+            <div id='site-title' class='site-title'>
+                <a href="https://fafayaa.github.io">  Fafa&#39;s Blog </a>
+            </div>
+        </div>
+        <button id="toggle-navigation" class="toggle-navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+            <p class="site-description">基于Gridea</p>
+            <div class="menu">
+                <ul id="menu-primary-items" class="menu-primary-items">
+                     
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/">首页</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/archives">归档</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/tags">标签</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/post/about">关于</a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+  <div id="main" class="main" role="main">
+    <div id="loop-container" class="loop-container">
+      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+        
+
+        <div class="entry-meta">
+          <span class="date">· 2019-06-23 ·</span> <span> / </span>
+          <span class="author">
+            <a href="https://fafayaa.github.io" title="" rel="author"> </a>
+          </span>
+          
+            <span class="category">
+                    <span> / </span>
+                    <a href="https://fafayaa.github.io/tag/v2ray">v2ray</a>
+                </span>
+          
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'>记一次安装v2ray带Sprov-ui面板</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>首先我们需要选购一个vps 这里推荐老毛子justhost的11软妹币/月小型vps<br>
 <a href="https://justhost.ru/services/vps">地址</a> (访问可能较慢）<br>
 配置如下</p>
 <blockquote>
@@ -130,86 +160,134 @@ bash /root/sprov-ui/sprov-ui.sh &amp;&amp; chmod +x /usr/bin/sprov-ui
 </code></pre>
 <p>至此访问服务器ip+设置的端口就可以进入Sprov面板啦</p>
 
+            </article>
+          </div>
+          <div class='entry-meta-bottom'>
+            <div class="entry-categories">
+              <p>
+                <span>Categories</span>
+                
+                  
+                    
+                  <a href="https://fafayaa.github.io/tag/v2ray" title="View all posts in v2ray">v2ray</a>
+                    
+                    
+              </p>
+            </div>
+            <div class="entry-tags">
+              <p><span>Tags</span>
+              </p>
+            </div>
+          </div>
+          <div class="author-meta">
+            <div class="author">
+              <img alt='' src="https://fafayaa.github.io/images/avatar.png?v=1569951492831" class='avatar avatar-72 photo' height='72' width='72'>
+              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://fafayaa.github.io'></a> </span>
+            </div>
+            <div class="bio">
+              <p></p>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            </div>
           </div>
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://fafayaa.github.io/post/hello-word">
-              <h3 class="post-title">
-                下一篇：Hello word！
-              </h3>
-            </a>
-          </div>
+          
+            <nav class="navigation pagination" role="navigation">
+              <h2 class="screen-reader-text">Posts navigation</h2>
+              <div class="nav-links">
+                <a class="next page-numbers" href="https://fafayaa.github.io/post/hello-word">下一篇->Hello word！</a>
+              </div>
+            </nav>
           
       </div>
-
-      
+      <section id="comments" class="comments">
         
-          <div id="gitalk-container"></div>
-        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-        
-      
+<div id="gitalk-container"></div>
 
-      <div class="site-footer">
-  <div class="slogan">基于Gridea</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-   | <a class="rss" href="https://fafayaa.github.io/atom.xml" target="_blank">RSS</a>
-</div>
+<script>
 
+  var gitalk = new Gitalk({
+    clientID: '12bebceec9aba7c505ac',
+    clientSecret: '8afbec8cf5c6ca79cd89695cf86c49b3f9d8751c',
+    repo: 'fafayaa.github.io',
+    owner: 'fafayaa',
+    admin: ['fafayaa'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
+          
+        
+      </section>
+    </div>
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        <a href="https://fafayaa.github.io"> Fafa&#39;s Blog </a>
+    </h1>
+    <p class="site-description">基于Gridea</p>
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+            <ul id="menu-footer-items" class="menu-footer-items">
+            </ul>
+        </div>
+    </div>
+    <ul class="social-media-icons">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+    <div class="design-credit">
+        <p></p>
+    </div>
+</footer>
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
+<script src="https://fafayaa.github.io/media/scripts/lib/jquery.min.js"></script>
+<script src="https://fafayaa.github.io/media/scripts/lib/jquerymigrate.js"></script>
+<script src="https://fafayaa.github.io/media/scripts/lib/production.min.js"></script>
 
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-
-      var gitalk = new Gitalk({
-        clientID: '12bebceec9aba7c505ac',
-        clientSecret: '8afbec8cf5c6ca79cd89695cf86c49b3f9d8751c',
-        repo: 'fafayaa.github.io',
-        owner: 'fafayaa',
-        admin: ['fafayaa'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
-  </body>
+</div>
+</body>
 </html>
+
